@@ -11,6 +11,7 @@ soong_namespace {
 cc_prebuilt_library_shared {
 	name: "libcamera_algoup_jni.xiaomi",
 	owner: "xiaomi",
+        allow_undefined_symbols: true,
 	strip: {
 		none: true,
 	},
@@ -47,6 +48,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "libcamera_mianode_jni.xiaomi",
 	owner: "xiaomi",
+        allow_undefined_symbols: true,
 	strip: {
 		none: true,
 	},
@@ -85,17 +87,6 @@ android_app_import {
 	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
 	overrides: ["Aperture", "Camera", "Camera2", "GoogleCameraGo"],
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "MiuiExtraPhoto",
-	owner: "xiaomi",
-	apk: "proprietary/system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
