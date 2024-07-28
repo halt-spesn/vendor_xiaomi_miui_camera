@@ -85,13 +85,13 @@ cc_prebuilt_library_shared {
 android_app_import {
 	name: "MiuiCamera",
 	owner: "xiaomi",
+	preprocessed: true,
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
 	overrides: ["Aperture", "Camera", "Camera2", "GoogleCameraGo", "Flash"],
-	certificate: "platform",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
 }
-
 
