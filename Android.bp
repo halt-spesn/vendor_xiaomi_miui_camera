@@ -86,7 +86,7 @@ android_app_import {
 	name: "MiuiCamera",
 	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
-	overrides: ["Aperture", "Camera", "Camera2", "GoogleCameraGo", "Flash"],
+	overrides: ["Aperture", "Camera", "Camera2", "GoogleCameraGo"],
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
